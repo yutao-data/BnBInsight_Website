@@ -1,5 +1,12 @@
 <!DOCTYPE html>
-<html lang="ca">
+<!--[if lt IE 7]> <html class="no-js lt-ie9 lt-ie8 lt-ie7"> <![endif]-->
+<!--[if IE 7]> <html class="no-js lt-ie9 lt-ie8"> <![endif]-->
+<!--[if IE 8]> <html class="no-js lt-ie9"> <![endif]-->
+<!--[if gt IE 8]> <!-->
+<html lang="zxx">
+  <!--
+<![endif]-->
+
   <head>
     <!-- TITLE OF SITE -->
     <title>BnB Insight</title>
@@ -8,11 +15,11 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta
       name="description"
-      content="BnB Insight - El teu Assistent Professional de Preus"
+      content="BnB Insight - Tu asistente profesional de precios"
     />
     <meta
       name="keywords"
-      content="BnB Insight, BnB, Intel·ligència Artificial, Preu, Predicció"
+      content="BnB Insight, BnB, Inteligencia Artificial, Precios, Predicción"
     />
     <meta name="author" content="BnB Insight" />
     <meta
@@ -59,38 +66,52 @@
       <nav>
         <input type="checkbox" id="show-search" />
         <input type="checkbox" id="show-menu" />
-        <label for="show-menu" class="menu-icon"><i class="fal fa-bars"></i></label>
+        <label for="show-menu" class="menu-icon"
+          ><i class="fal fa-bars"></i
+        ></label>
         <div class="menu_content">
           <div class="logo">
-            <a href="index.html"><img src="images/bnbinsight-logo.png" alt="Logo" width="80" height="80"/></a>
+            <a href="index.html"><img src="images/bnbinsight-logo.png"  alt="Logo" width="80" height="80"/></a>
           </div>
           <!-- ./logo -->
           <ul class="links">
-            <li><a href="index-en.html" class="desktop-link">Pàgina Inicial</a></li>
-            <li><a href="product-service-en.html" class="desktop-link">Producte i Servei</a></li>
-            <li><a href="index-en.html" class="desktop-link">Casos</a></li>
-            <li><a href="index-en.html">Sobre Nosaltres</a></li>
-            <li><a href="index-spanish.html">Española</a></li>
+            <li>
+              <a href="index-en.html" class="desktop-link"> Página de inicio </a>
+            </li>
+            <li>
+              <a href="product-service-en.html" class="desktop-link">
+                Producto y Servicio
+              </a>
+            </li>
+            <li>
+              <a href="case.html" class="desktop-link">
+                Casos
+              </a>
+            </li>
+            <li><a href="index-en.html">Acerca de</a></li>
+            <li><a href="index.html">Catalán</a></li>
             <li><a href="index-en.html">English</a></li>
           </ul>
           <!-- ./ ul -->
         </div>
         <!-- ./ menu_content -->
-        <label for="show-search" class="search-icon"><i class="fal fa-search"></i></label>
+        <label for="show-search" the="search-icon"
+          ><i class="fal fa-search"></i
+        ></label>
         <form action="#" class="search-box">
-          <input type="text" placeholder="Cerca qualsevol cosa..." required />
-          <button type="submit" class="go-icon"><i class="fal fa-long-arrow-alt-right"></i></button>
+          <input type="text" placeholder="Buscar cualquier cosa..." required />
+          <button type="submit" class="go-icon">
+            <i class="fal fa-long-arrow-alt-right"></i>
+          </button>
         </form>
         <!-- /. search form -->
-
         <div class="header_btn">
-<!--          <a href="login.html">Iniciar Sessió / Registrar-se</a>-->
-                                <a
+            <a
             href="login.html"
 <!--            class="more-link"-->
 <!--            data-bs-toggle="modal"-->
 <!--          >-->
-            Iniciar Sessió
+            Iniciar sesión / Registrarse
           </a>
         </div>
         <!-- Button -->
@@ -99,6 +120,51 @@
     <!-- End: header navigation
 ==================================================-->
 
+    <!-- Start: Connect Wallet Modal
+==================================================-->
+    <div
+      class="modal fade"
+      id="connectWallet"
+      tabindex_en="-1"
+      aria-hidden="true"
+    >
+      <div class="modal-dialog">
+        <div class="modal-content">
+          <div class="modal-header">
+            <h5 class="modal-title">Conectar a una cartera</h5>
+            <button
+              type="button"
+              class="btn-close"
+              data-bs-dismiss="modal"
+              aria-label="Close"
+            ></button>
+          </div>
+          <div class="wallet_body">
+            <a href="#">
+              Instalar Binance Chain Wallet
+              <i class="fas fa-box"> </i>
+            </a>
+            <a href="#">
+              Instalar Metamask
+              <i class="fa fa-head-side-mask"> </i>
+            </a>
+            <a href="#">
+              WalletConnect
+              <i class="fab fa-google-wallet"> </i>
+            </a>
+            <a href="#">
+              Fortmatic
+              <i class="fa fa-pallet"> </i>
+            </a>
+          </div>
+          <!-- ./ wallet_body -->
+        </div>
+        <!-- ./ modal-content -->
+      </div>
+      <!-- ./  modal-dialog -->
+    </div>
+    <!-- End: Connect Wallet Modal
+==================================================-->
     <!-- Start: Hero Section
 ==================================================-->
     <div class="slider_owl owl-carousel">
@@ -107,7 +173,8 @@
           <div class="row">
             <div class="col-md-6 col-sm-12">
               <div class="hero_text">
-                <h2>BnB Insight: Optimització de Rendiments Dirigida per IA.</h2>
+                <h2>BnB Insight: Optimización de Ingresos Impulsada por IA.</h2>
+                <!-- <a href="#" class="more-link"> Empezar </a> -->
               </div>
               <!-- /.hero_text -->
             </div>
@@ -122,7 +189,10 @@
           <div class="row">
             <div class="col-md-6 col-sm-12">
               <div class="hero_text">
-                <h2>La Elecció de Catalunya per a l'Anàlisi Hotelera.</h2>
+                <h2>
+                  La Elección de Cataluña para Análisis en Hospitalidad.
+                </h2>
+                <!-- <a href="#" class="more-link"> Empezar </a> -->
               </div>
               <!-- /.hero_text -->
             </div>
@@ -137,7 +207,10 @@
           <div class="row">
             <div class="col-md-6 col-sm-12">
               <div class="hero_text">
-                <h2>Millora el Rendiment Hotel amb BnB Insight.</h2>
+                <h2>
+                  Mejora el Rendimiento del Hotel con BnB Insight.
+                </h2>
+                <!-- <a href="#" class="more-link"> Empezar </a> -->
               </div>
               <!-- /.hero_text -->
             </div>
@@ -150,160 +223,119 @@
     </div>
     <!-- End: Hero Section
 ==================================================-->
-<!-- Start : Blog Page Content
+
+    <!-- Start: Blog Page Content
 ==================================================-->
-<div class="blog_container">
-    <div class="container">
-        <div class="row">
-            <!-- Blog Area -->
-            <div class="col-lg-8 col-sm-12 blog-area">
-                <div class="row">
-                    <div class="col-sm-12">
-                        <div class="blog_wrp">
-                            <a class="blog_img" href="single-blog.html">
-                                <img class="img-responsive" src="images/blog1.jpg" alt="">
-                            </a>
-                            <a href="single-blog.html">
-                                <h4>BnB Insight: Millorant l'Hospitalitat amb Anàlisis Precises</h4>
-                            </a>
-                            <div class="blog_meta">
-                                <span> <i class="pe-7s-ticket"></i>Anàlisis avançades</span>
-                                <span> <i class="pe-7s-clock"></i>11 de juny de 2024</span>
-                            </div>
-                            <p>Entra en el futur de l'hospitalitat amb BnB Insight, el teu soci de confiança per maximitzar els ingressos de l'hotel mitjançant anàlisis precises. Especialitzats en els mercats dinàmics de Catalunya, la nostra plataforma utilitza models avançats basats en dades per proporcionar als propietaris de Bed and Breakfast visions accionables per a la gestió de preus i ocupació. Integrant tecnologia innovadora d'IA amb una comprensió profunda de les particularitats del mercat, BnB Insight ofereix estratègies personalitzades que s'adapten a les demandes locals úniques, assegurant una optimització de preus i una millora de la rendibilitat en un paisatge competitiu.
-                            </p>
-                            <div class="blog_read">
-                                <a class="more-link" href="single-blog.html">Llegeix més</a>
-                                <div class="blog_soc_sh">
-                                    <a href="#" class="fab fa-facebook-f"></a>
-                                    <a href="#" class="fab fa-pinterest"></a>
-                                    <a href="#" class="fab fa-twitter"></a>
-                                    <a href="#" class="fa fa-link"></a>
+    <div class="blog_container">
+        <div class="container">
+            <div class="row">
+                <!-- Blog Area -->
+                <div class="col-lg-8 col-sm-12 blog-area">
+                    <div class="row">
+                        <div class="col-sm-12">
+                            <div class="blog_wrp">
+                                <a class="blog_img" href="single-blog.html">
+                                    <img class="img-responsive" src="images/preferences.jpg" alt="">
+                                </a>
+                                <a href="single-blog.html">
+                                    <h4>BnB Insight: Configuración Personalizada de Precios y Ocupación</h4>
+                                </a>
+                                <div class="blog_meta">
+                                    <span> <i class="pe-7s-ticket"></i>Análisis avanzado</span>
+                                    <span> <i class="pe-7s-clock"></i>11 de junio de 2024</span>
+                                </div>
+                                <p>Descubre cómo establecer preferencias personalizadas para optimizar la gestión de precios y ocupación en tu establecimiento. BnB Insight te permite adaptar los análisis a las necesidades específicas de tu negocio, utilizando modelos avanzados de datos para ofrecer estrategias de precios dinámicas y maximizar la rentabilidad.</p>
+                                <div class="blog_read">
+                                    <a class="more-link" href="single-blog.html">Leer más</a>
+                                    <div class="blog_soc_sh">
+                                        <a href="#" class="fab fa-facebook-f"></a>
+                                        <a href="#" class="fab fa-pinterest"></a>
+                                        <a href="#" class="fab fa-twitter"></a>
+                                        <a href="#" class="fa fa-link"></a>
+                                    </div>
                                 </div>
                             </div>
                         </div>
-                    </div>
-                    <div class="col-sm-12">
-                        <div class="blog_wrp">
-                            <a class="blog_img" href="single-blog.html">
-                                <img class="img-responsive" src="images/blog2.jpg" alt="">
-                            </a>
-                            <a href="single-blog.html">
-                                <h4>BnB Insight: Prediccions Ajustades per l'Hospitalitat Catalana</h4>
-                            </a>
-                            <div class="blog_meta">
-                                <span> <i class="pe-7s-ticket"></i>IA per un creixement òptim dels ingressos</span>
-                                <span> <i class="pe-7s-clock"></i>11 de juny de 2024</span>
-                            </div>
-                            <p>Descobreix el poder de la predicció localitzada amb BnB Insight, on transformem les dades en oportunitats de creixement per al sector de l'hospitalitat de Catalunya. Els nostres serveis estan finament ajustats per complir amb les necessitats específiques dels establiments Bed and Breakfast, oferint prediccions detallades sobre els preus dels hotels i les taxes d'ocupació. Amb un enfocament en el mercat únic de Catalunya, les nostres eines analítiques d'avantguarda i estratègies de preus a mida capaciten els hotelers per navegar amb confiança la volatilitat del mercat, optimitzar els ingressos i assolir un èxit sostingut.
-                            </p>
-                            <div class="blog_read">
-                                <a class="more-link" href="single-blog.html">Llegeix més</a>
-                                <div class="blog_soc_sh">
-                                    <a href="#" class="fab fa-facebook-f"></a>
-                                    <a href="#" class="fab fa-pinterest"></a>
-                                    <a href="#" class="fab fa-twitter"></a>
-                                    <a href="#" class="fa fa-link"></a>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="blog_pagi">
-                        <ul>
-                            <li><a href="" class="page_number">1</a></li>
-                            <li><a href="" class="page_number">2</a></li>
-                            <li><a href="" class="page_number current">3</a></li>
-                            <li><a href="" class="page_number">→</a></li>
-                        </ul>
                     </div>
                 </div>
-            </div>
-            <!--/ Blog Area -->
+                <!--/ Blog Area -->
 
-            <!-- Widget Area -->
-            <div class="col-lg-4 col-sm-12 widget-area">
-                <!-- Widget Search -->
-                <aside class="widget widget-search">
-                    <!-- input-group -->
-                    <div class="input-group">
-                        <input class="form-control" placeholder="Cerca" type="text">
-                        <span class="input-group-btn">
-                            <button type="button"><i class="pe-7s-search"></i></button>
-                        </span>
-                    </div>
-                    <!-- /input-group -->
-                </aside>
-                <!-- Widget Search /- -->
-                <!-- Recent Post -->
-                <aside class="widget wiget-recent-post">
-                    <h3 class="widget-title">Darreres Publicacions</h3>
-                    <div class="recent-post-box">
-                        <div class="recnt_pst_imge">
-                            <img src="images/blog1.jpg" alt="">
+                <!-- Widget Area -->
+                <div class="col-lg-4 col-sm-12 widget-area">
+                    <!-- Widget Search -->
+                    <aside class="widget widget-search">
+                        <!-- input-group -->
+                        <div class="input-group">
+                            <input class="form-control" placeholder="Buscar" type="text">
+                            <span class="input-group-btn">
+                                <button type="button"><i class="pe-7s-search"></i></button>
+                            </span>
                         </div>
-<!--                        <div class="recent-title">-->
-<!--                            <a href="single-blog.html">BnB Insight: Prediccions Ajustades per l'Hospitalitat Catalana</a>-->
-<!--                            <span><i class="fal fa-calendar-alt"></i> 11 de juny de 2024</span>-->
-<!--                        </div>-->
-                    </div>
-                    <div class="recent-post-box">
-                        <div class="recnt_pst_imge">
-                            <img src="images/blog2.jpg" alt="">
+                        <!-- /input-group -->
+                    </aside>
+                    <!-- Widget Search /- -->
+                    <!-- Recent Post -->
+                    <aside class="widget wiget-recent-post">
+                        <h3 class="widget-title">Publicaciones Recientes</h3>
+                        <div class="recent-post-box">
+                            <div class="recnt_pst_imge">
+                                <img src="images/blog1.jpg" alt="">
+                            </div>
                         </div>
-<!--                        <div class="recent-title">-->
-<!--                            <a href="single-blog.html">BnB Insight: Millorant l'Hospitalitat amb Anàlisis Precises</a>-->
-<!--                            <span><i class="fal fa-calendar-alt"></i> 11 de juny de 2024</span>-->
-<!--                        </div>-->
-                    </div>
-                    <div class="recent-post-box">
-                        <div class="recnt_pst_imge">
-                            <img src="images/blog1.jpg" alt="">
+                        <div class="recent-post-box">
+                            <div class="recnt_pst_imge">
+                                <img src="images/blog2.jpg" alt="">
+                            </div>
                         </div>
-<!--                        <div class="recent-title">-->
-<!--                            <a href="single-blog.html">Visió del Mercat i Avantatge Competitiu</a>-->
-<!--                            <span><i class="fal fa-calendar-alt"></i> 11 de juny de 2024</span>-->
-<!--                        </div>-->
-                    </div>
-                </aside>
-                <!-- Recent Post /- -->
-                <!-- Post Categories -->
-                <aside class="widget widget-post-categories">
-                    <h3 class="widget-title">Categories de Publicacions</h3>
-                    <ul class="categories-type">
-                        <li>
-                            <a href="#" title="Statistics">Anàlisis d'Hospitalitat</a>
-                        </li>
-                        <li>
-                            <a href="#" title="Wordpress">Estratègies de Preus Dinàmiques</a>
-                        </li>
-                        <li>
-                            <a href="#" title="Web Developement">Tendències del Mercat Turístic</a>
-                        </li>
-                        <li>
-                            <a href="#" title="Business">Tecnologia en l'Hospitalitat</a>
-                        </li>
-                        <li>
-                            <a href="#" title="Desktop">Gestió de Relacions amb Clients</a>
-                        </li>
-                    </ul>
-                </aside>
-                <!-- Post Categories /- -->
+                        <div class="recent-post-box">
+                            <div class="recnt_pst_imge">
+                                <img src="images/blog1.jpg" alt="">
+                            </div>
+                        </div>
+                    </aside>
+                    <!-- Recent Post /- -->
+                    <!-- Post Categories -->
+                    <aside class="widget widget-post-categories">
+                        <h3 class="widget-title">Categorías de Publicaciones</h3>
+                        <ul class="categories-type">
+                            <li>
+                                <a href="#" title="Statistics">Análisis de Hospitalidad</a>
+                            </li>
+                            <li>
+                                <a href="#" title="Wordpress">Estrategias de Precios Dinámicos</a>
+                            </li>
+                            <li>
+                                <a href="#" title="Web Developement">Tendencias del Mercado Turístico</a>
+                            </li>
+                            <li>
+                                <a href="#" title="Business">Tecnología en Hospitalidad</a>
+                            </li>
+                            <li>
+                                <a href="#" title="Desktop">Gestión de Relaciones con Clientes</a>
+                            </li>
+                        </ul>
+                    </aside>
+                    <!-- Post Categories /- -->
 
-                <!-- Widget Tags -->
-                <aside class="widget widget-tags">
-                    <h3 class="widget-title">Etiquetes Principals</h3><a href="#" title="Install">Disseny</a> <a href="#"
-                        title="Design">Anàlisis Predictives</a> <a href="#" title="Pakaging">Seguretat de Dades</a> <a href="#"
-                        title="Video">Turisme a Catalunya</a> <a href="#" title="Branding">Eficiència Operativa</a> <a href="#"
-                        title="Branding">Gestió d'Ingressos</a> <a href="#" title="Branding">Tecnologia IA</a>
-                </aside>
-                <!-- Widget Tags /- -->
+                    <!-- Widget Tags -->
+                    <aside class="widget widget-tags">
+                        <h3 class="widget-title">Etiquetas Principales</h3>
+                        <a href="#" title="Install">Diseño</a>
+                        <a href="#" title="Design">Analítica Predictiva</a>
+                        <a href="#" title="Pakaging">Seguridad de Datos</a>
+                        <a href="#" title="Video">Turismo en Cataluña</a>
+                        <a href="#" title="Branding">Eficiencia Operacional</a>
+                        <a href="#" title="Branding">Gestión de Ingresos</a>
+                        <a href="#" title="Branding">Tecnología de IA</a>
+                    </aside>
+                    <!-- Widget Tags /- -->
+                </div>
+                <!-- Widget Area /- -->
             </div>
-            <!-- Widget Area /- -->
         </div>
+        <!-- Container /- -->
     </div>
-    <!-- Container /- -->
-</div>
-<!-- End : Blog Page Content
+    <!-- End : Blog Page Content
 ==================================================-->
 
 
@@ -318,7 +350,6 @@
           <h3>Product & Service</h3>
         </div>
 
-        <!-- 点击对应block加跳转 -->
 
         <!-- End: Heading -->
         <div class="row" id="scene2">
@@ -330,9 +361,9 @@
             <!-- category 1 -->
             <div class="workflow_item">
               <i class="pe-7s-cash"></i>
-              <h4>Demand Forecasting Platform</h4>
+              <h4>Advanced Demand Forecasting</h4>
               <p>
-                Predicts hotel demand fluctuations to optimize pricing and maximize revenue.
+                BnB Insight integrates festival attendance data to enhance demand predictions for Barcelona neighborhoods.
               </p>
             </div>
           </div>
@@ -343,9 +374,9 @@
             <!-- category 1 -->
             <div class="workflow_item">
               <i class="pe-7s-world"></i>
-              <h4>Dynamic Pricing Recommendations</h4>
+              <h4>Room Optimization Pricing Strategy Service</h4>
               <p>
-                Offers AI-generated, real-time pricing strategies tailored to market conditions and hotel needs.
+                BnB Insight's Room Optimization Pricing Strategy Service uses historical price trends.
               </p>
             </div>
           </div>
@@ -357,9 +388,9 @@
             <!-- category 1 -->
             <div class="workflow_item">
               <i class="pe-7s-science"></i>
-              <h4>Integration Capability</h4>
+              <h4>Consultation and Custom Reports</h4>
               <p>
-                Seamlessly integrates with existing hotel management software to enhance operational efficiency.
+                BnB Insight’s "Consultation and Custom Reports" service leverages detailed event attendance data.
               </p>
             </div>
           </div>
